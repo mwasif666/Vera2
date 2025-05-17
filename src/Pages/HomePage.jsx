@@ -14,8 +14,6 @@ const HomePage = () => {
       {/* <HomeBanner /> */}
       <About />
       <Services />
-      <Team />
-      <ContactForm />
     </div>
   );
 };
