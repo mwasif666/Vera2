@@ -1,0 +1,91 @@
+.Products {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #393626;
+  color: white;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  justify-content: center;
+}
+
+.Products h1 {
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+.Products h4 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media all and (min-width: 300px) and (max-width: 768px) {
+  .Products {
+    padding: 2rem 1rem;
+  }
+
+  .Products h1 {
+    font-size: 1.5rem;
+    padding: 0px 1rem;
+    padding-top: 30px;
+  }
+  .Products h4 {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .Products {
+    height: 380px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+  .Products {
+    padding: 2rem 5rem;
+  }
+
+  .Products h1 {
+    font-size: 1.7rem;
+    padding: 1rem;
+  }
+}
+@media all and (min-width: 993px) and (max-width: 1200px) {
+  .Products {
+    padding: 2rem 8rem;
+  }
+
+  .Products h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+
+/* Animation for subtle entrance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Products {
+  animation: fadeIn 0.8s ease-out forwards;
+}

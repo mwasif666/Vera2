@@ -1,0 +1,159 @@
+.section {
+  height: 110vh;
+  text-align: center;
+}
+
+.veraLogo {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-transform: lowercase;
+}
+
+.backimg1 h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+.backimg2 h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  font-family: "Bodoni", serif;
+  padding-top: 20px;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+
+.backimg1 .ctaButton {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.6rem 3rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  border-radius: 20px;
+}
+.backimg2 .ctaButton {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  padding: 0.6rem 3rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-color);
+  border-radius: 20px;
+}
+.backimg2 {
+  padding-bottom: 55px;
+}
+
+.ctaButton:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+.backimg2 {
+  background-image: url(../../public/assets/images/Banners/2.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.backimg1 {
+  background-image: url(../../public/assets/images/Banners/1.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+@media all and (min-width: 300px) and (max-width: 768px) {
+  .backimg2 {
+    height: 100vh;
+  }
+  .backimg1 {
+    height: 100vh;
+  }
+  .section {
+    height: 100%;
+    text-align: center;
+  }
+  .backimg1 h2 {
+    font-size: 1.6rem;
+    line-height: 30px;
+  }
+  .backimg2 h2 {
+    font-size: 1.6rem;
+    line-height: 30px;
+  }
+  .backimg2 {
+    padding-bottom: 30px;
+  }
+  .backimg1 .ctaButton {
+    padding: 0.4rem 2rem;
+    font-size: 1rem;
+  }
+  .backimg2 .ctaButton {
+    padding: 0.4rem 2rem;
+    font-size: 1rem;
+    margin-top: 05px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+  .backimg1 h2 {
+    font-size: 1.6rem;
+    line-height: 30px;
+  }
+  .backimg2 h2 {
+    font-size: 1.6rem;
+    line-height: 30px;
+  }
+  .backimg2 {
+    padding-bottom: 30px;
+  }
+  .backimg1 .ctaButton {
+    padding: 0.4rem 2rem;
+    font-size: 1rem;
+  }
+  .backimg2 .ctaButton {
+    padding: 0.4rem 2rem;
+    font-size: 1rem;
+    margin-top: 05px;
+  }
+}
+@media all and (min-width: 993px) and (max-width: 1200px) {
+  .backimg1 h2 {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+  .backimg2 h2 {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+  .backimg2 {
+    padding-bottom: 30px;
+  }
+  .backimg1 .ctaButton {
+    padding: 0.4rem 2rem;
+    font-size: 1rem;
+  }
+  .backimg2 .ctaButton {
+    padding: 0.4rem 2rem;
+    font-size: 1rem;
+    margin-top: 05px;
+  }
+}

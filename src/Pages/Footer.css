@@ -1,0 +1,55 @@
+.footer {
+  background-color: #e4e1d6;
+  padding: 80px 0px;
+}
+.footer ul li,
+.footer ul li a {
+  color: var(--primary-color);
+  padding-bottom: 8px;
+  text-decoration: none;
+}
+.footer-logo {
+  width: 80%;
+  height: auto;
+}
+.footer-heading {
+  color: var(--primary-color);
+  font-family: "Bodoni";
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.footer-newsletter-text {
+  color: var(--primary-color);
+}
+.Join-btn {
+  background-color: var(--primary-color);
+  border: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  position: relative;
+  right: 05px;
+}
+.Join-btn:hover {
+  background-color: var(--primary-color);
+  border: none;
+}
+.newsletter {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+}
+.newsletter:focus {
+  background-color: transparent !important;
+  border: 1px solid var(--primary-color);
+  outline: 0;
+  box-shadow: none !important;
+}
+.footer-contact p {
+  font-size: 12px;
+}
+.footer-contact .footer-icon {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 34px;
+  padding: 10px;
+  border-radius: 100%;
+}
