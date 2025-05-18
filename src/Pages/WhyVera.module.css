@@ -1,0 +1,101 @@
+.whyVera {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 4rem 0;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.maindivvera {
+  position: relative;
+}
+.salonImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  min-height: 400px;
+  transition: transform 0.3s ease;
+}
+
+.salonImage:hover {
+  transform: scale(1.02);
+}
+
+.contentWrapper {
+  padding: 4rem 5rem;
+  position: absolute;
+  top: 110px;
+  right: 90px;
+  background-color: #797663;
+  color: white;
+  width: 550px;
+  border-radius: 0px;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.featuresList {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.featureItem {
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+.featureText {
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .whyVera {
+    padding: 2rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contentWrapper {
+    padding: 1rem;
+  }
+
+  .featureItem {
+    font-size: 1rem;
+  }
+
+  .salonImage {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contentWrapper {
+    padding-left: 3rem;
+  }
+}
+.Whyvera {
+  width: 100%;
+}

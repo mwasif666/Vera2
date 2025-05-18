@@ -17,8 +17,11 @@
   font-family: "Montserrat", sans-serif;
   color: white;
   border-radius: 20px;
+  width: 400px;
 }
-
+.sectionTitle em {
+  font-family: "Bodoni2";
+}
 .video-container .sectionTitle {
   font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;

@@ -35,11 +35,15 @@ const HomeVideo = () => {
           <h2 className="sectionTitle">
             Be Bold. <em>Be Subtle</em>. Be You
           </h2>
-          <div className="d-flex gap-4 book-button">
-            <button className="ctaButton">Book Appointment</button>
-            <button className="ctaButton">
-              Mon - Fri | 10:00 am - 9:00 pm
-            </button>
+          <div className="row book-button">
+            <div className="col-lg-6">
+              <button className="ctaButton">Book Appointment</button>
+            </div>
+            <div className="col-lg-6">
+              <button className="ctaButton">
+                Mon - Fri | 10:00 am - 9:00 pm
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -62,11 +66,15 @@ const HomeVideo = () => {
             {" "}
             Be Bold. <em>Be Subtle</em>. Be You
           </h2>
-          <div className="d-flex gap-4 book-button">
-            <button className="ctaButton">Book Appointment</button>
-            <button className="ctaButton">
-              Mon - Fri | 10:00 am - 9:00 pm
-            </button>
+          <div className="row d-flex justify-content-center book-button w-100">
+            <div className="col-lg-6 text-lg-end">
+              <button className="ctaButton">Book Appointment</button>
+            </div>
+            <div className="col-lg-6 text-lg-start">
+              <button className="ctaButton">
+                Mon - Fri | 10:00 am - 9:00 pm
+              </button>
+            </div>
           </div>
         </div>
       </div>

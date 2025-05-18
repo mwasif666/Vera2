@@ -1,11 +1,10 @@
 import React from "react";
 import HomeBanner from "../Components/HomeBanner";
 import About from "./About";
-import Team from "./Team";
-import ContactForm from "./Contact";
 
 import HomeVideo from "../Components/HomeVIdeo";
 import Services from "./Services";
+import WhyVera from "./WhyChoose";
 
 const HomePage = () => {
   return (
@@ -14,6 +13,7 @@ const HomePage = () => {
       {/* <HomeBanner /> */}
       <About />
       <Services />
+      <WhyVera />
     </div>
   );
 };

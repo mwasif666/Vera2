@@ -4,6 +4,8 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import styles from "./Services.module.css";
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState("ladies");
@@ -46,25 +48,25 @@ const Services = () => {
       id: 1,
       title: "Sports Massage",
       description: "Recovery and performance enhancement massage",
-      icon: "assets/img/icons/gents-1.svg",
+      icon: "assets/images/icons/sr-7-1.svg",
     },
     {
       id: 2,
       title: "Haircut",
       description: "Professional haircuts and styling",
-      icon: "assets/img/icons/gents-2.svg",
+      icon: "assets/images/icons/sr-7-2.svg",
     },
     {
       id: 3,
       title: "Shave",
       description: "Traditional wet shave experience",
-      icon: "assets/img/icons/gents-3.svg",
+      icon: "assets/images/icons/sr-7-3.svg",
     },
     {
       id: 4,
       title: "Beard Trim",
       description: "Precision beard trimming and shaping",
-      icon: "assets/img/icons/gents-4.svg",
+      icon: "assets/images/icons/sr-7-4.svg",
     },
     {
       id: 5,
@@ -76,14 +78,12 @@ const Services = () => {
 
   return (
     <section className={styles.space}>
-      <div className="container">
+      <div className={`${styles.container} container`}>
         <div className="row justify-content-center text-center">
           <div className="col-md-9 col-lg-7 col-xl-6">
             <div className={styles.titleArea}>
-              <span className={styles.secSubtitle}>
-                Your Style, Our Expertise
-              </span>
-              <h2 className={styles.secTitle}>Our Services</h2>
+              <span className={styles.secSubtitle}>Our Services</span>
+              <h2 className={styles.secTitle}>Your Style, Our Expertise</h2>
             </div>
           </div>
         </div>
@@ -160,10 +160,10 @@ const Services = () => {
               </Swiper>
               <div className={styles.swiperNavigation}>
                 <button className={`${styles.swiperButtonPrev} ladies-prev`}>
-                  <i className="fas fa-chevron-left"></i>
+                  <FaArrowLeftLong />
                 </button>
                 <button className={`${styles.swiperButtonNext} ladies-next`}>
-                  <i className="fas fa-chevron-right"></i>
+                  <FaLongArrowAltRight />
                 </button>
               </div>
             </div>
@@ -217,10 +217,10 @@ const Services = () => {
               </Swiper>
               <div className={styles.swiperNavigation}>
                 <button className={`${styles.swiperButtonPrev} gents-prev`}>
-                  <i className="fas fa-chevron-left"></i>
+                  <FaArrowLeftLong />
                 </button>
                 <button className={`${styles.swiperButtonNext} gents-next`}>
-                  <i className="fas fa-chevron-right"></i>
+                  <FaLongArrowAltRight />
                 </button>
               </div>
             </div>
@@ -228,9 +228,9 @@ const Services = () => {
         </div>
 
         {/* Price List Button */}
-        <div className="text-center mt-5">
+        <div className="text-center mt-2">
           <a href="#" className={`btn ${styles.priceListBtn}`}>
-            View Full Price List
+            Price List
           </a>
         </div>
       </div>
