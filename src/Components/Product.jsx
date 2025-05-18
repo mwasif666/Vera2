@@ -1,20 +1,62 @@
 import React from "react";
 import styles from "../Styles/Products.module.css";
 
-const ProductHead = () => {
+const Product = () => {
   return (
-    <section className={styles.Products} aria-label="About our company">
-      <div>
-        <h1>Our Products</h1>
-        <h4>
-          Vera’s exclusive line of skincare, body and haircare products, crafted
-          with the finest ingredients to cater to your unique beauty needs. Our
-          products are formulated to nourish, rejuvenate, and enhance your
-          natural beauty, ensuring you look and feel your best every day.
-        </h4>
-      </div>
-    </section>
+    <>
+      <section className={styles.ProductSection}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8">
+              <div className={styles.conentfirst}>
+                <div className="row d-flex align-items-center w-100">
+                  <div className="col-lg-6 ">
+                    <h2>Vera Products</h2>
+                  </div>
+                  <div className="col-lg-6">
+                    <button className={styles.ctaButton}>Explore More</button>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.contentsecond}>
+                <h1>Your Everyday Essentials,</h1>
+              </div>
+              <div className={`${styles.imagesProducts} row`}>
+                <div className="col-md-4">
+                  <img
+                    src="/assets/images/Products/1.png"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+                <div className="col-md-4">
+                  <img
+                    src="/assets/images/Products/2.png"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+                <div className="col-md-4">
+                  <img
+                    src="/assets/images/Products/3.png"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <img
+                src="/assets/images/Products/banner.jpg"
+                width="100%"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
-export default ProductHead;
+export default Product;

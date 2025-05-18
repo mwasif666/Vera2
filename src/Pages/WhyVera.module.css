@@ -26,7 +26,7 @@
 }
 
 .contentWrapper {
-  padding: 4rem 5rem;
+  padding: 4rem 6rem !important;
   position: absolute;
   top: 110px;
   right: 90px;

@@ -5,6 +5,11 @@ import About from "./About";
 import HomeVideo from "../Components/HomeVIdeo";
 import Services from "./Services";
 import WhyVera from "./WhyChoose";
+import TestimonialSection from "./Testimonial";
+import TeamSection from "./Team";
+import BlogSection from "./Blog";
+import ProductPage from "../Components/Product";
+import BlogPost from "./Blog";
 
 const HomePage = () => {
   return (
@@ -14,6 +19,10 @@ const HomePage = () => {
       <About />
       <Services />
       <WhyVera />
+      <TestimonialSection />
+      <TeamSection />
+      <ProductPage />
+      <BlogPost />
     </div>
   );
 };

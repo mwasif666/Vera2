@@ -1,182 +1,91 @@
-import { useState, useEffect } from "react";
-import { gsap } from "gsap";
+import React from "react";
+import styles from "../Styles/TeamSection.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./Team.css";
 
-const images = [
-  {
-    url: "/assets/images/team/founder.png",
-    title: "Naureen Nawaz",
-    subtitle: "FOUNDER & CEO",
-  },
-  {
-    url: "/assets/images/team/2.png",
-    title: "Naureen Nawaz",
-    subtitle: "FOUNDER & CEO",
-  },
-  {
-    url: "/assets/images/team/3.png",
-    title: "Naureen Nawaz",
-    subtitle: "FOUNDER & CEO",
-  },
-  {
-    url: "/assets/images/team/4.png",
-    title: "Naureen Nawaz",
-    subtitle: "FOUNDER & CEO",
-  },
-  {
-    url: "/assets/images/team/5.png",
-    title: "Naureen Nawaz",
-    subtitle: "FOUNDER & CEO",
-  },
-];
-
-const Slider2 = () => {
-  const [clickedIndex, setClickedIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkIfMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    checkIfMobile();
-    window.addEventListener("resize", checkIfMobile);
-    return () => window.removeEventListener("resize", checkIfMobile);
-  }, []);
-
-  useEffect(() => {
-    if (!isMobile) {
-      images.forEach((_, i) => {
-        gsap.to(`.item-${i}`, {
-          width: i === clickedIndex ? "40vw" : "20vw",
-          duration: 2,
-          ease: "elastic(1, .6)",
-        });
-
-        gsap.to(`.item-title-${i}`, {
-          opacity: i === clickedIndex ? 1 : 0,
-          fontSize: i === clickedIndex ? "2rem" : "1rem",
-          duration: 0.5,
-        });
-
-        gsap.to(`.item-subtitle-${i}`, {
-          opacity: i === clickedIndex ? 1 : 0,
-          duration: 0.5,
-          delay: 0.3,
-        });
-      });
-    }
-  }, [clickedIndex, isMobile]);
-
-  const expand = (index) => {
-    if (!isMobile && index !== clickedIndex) {
-      setClickedIndex(index);
-    }
-  };
+const TeamSection = () => {
+  const teamData = [
+    {
+      name: "Naureen Nawaz",
+      image: "/assets/images/team/founder.png",
+      designation: "FOUNDER & CEO",
+    },
+    {
+      name: "Alicia Regis",
+      image: "/assets/images/team/2.png",
+      designation: "FOUNDER & CEO",
+    },
+    {
+      name: "Karl Finley",
+      image: "/assets/images/team/3.png",
+      designation: "FOUNDER & CEO",
+    },
+    {
+      name: "Jenna Lopez",
+      image: "/assets/images/team/4.png",
+      designation: "FOUNDER & CEO",
+    },
+    {
+      name: "Mark Rivera",
+      image: "/assets/images/team/5.png",
+      designation: "FOUNDER & CEO",
+    },
+  ];
 
   return (
-    <div className="slider-container">
-      <div className="container-fluid text-slide2">
+    <div className={`container-fluid ${styles.sectionWrapper}`}>
+      <div className="container">
         <div className="row">
-          <div className="col-md-7 p-0">
-            <div className="image-up">
-              <img src="/assets/images/team/up.png" alt="" />
+          {/* Left Box */}
+          <div className="col-lg-3 mb-4 mb-lg-0">
+            <div className={`${styles.leftBox} p-4`}>
+              <p className={styles.tagline}>JOIN THE TEAM</p>
+              <h2 className={styles.heading}>
+                Personalized
+                <br />
+                Coaching
+              </h2>
+              <p className={styles.description}>
+                One-on-one sessions with our fitness and yoga experts, get
+                personalized guidance and encouragement to reach your specific
+                goals.
+              </p>
+              <button className={styles.viewMore}>View more</button>
             </div>
           </div>
-          <div className="col-md-5 p-0 team-up">
-            <div className="d-flex flex-column justify-content-center align-items-center h-100">
-              <h2>Discover Our Services</h2>
-              <button>Menu</button>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-1" style={{ height: "100vh" }}>
-            <h2 className="vertical">Meet The Team</h2>
-          </div>
-          <div className="col-md-11 teams-section">
-            {isMobile ? (
-              <Swiper
-                effect={"coverflow"}
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={"auto"}
-                coverflowEffect={{
-                  rotate: 0,
-                  stretch: 0,
-                  depth: 100,
-                  modifier: 2,
-                  slideShadows: false,
-                }}
-                pagination={true}
-                navigation={true}
-                modules={[EffectCoverflow, Pagination, Navigation]}
-                className="mySwiper"
-              >
-                {images.map((image, index) => (
-                  <SwiperSlide key={index}>
-                    <div
-                      className="swiper-slide-content"
-                      style={{
-                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(${image.url})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        backgroundRepeat: "no-repeat",
-                      }}
-                    >
-                      <div className="item-content">
-                        <div className="item-title">{image.title}</div>
-                        <div className="item-subtitle">{image.subtitle}</div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            ) : (
-              <div className="group">
-                {images.map((image, index) => (
-                  <div
-                    key={index}
-                    className={`item item-${index} ${
-                      index !== clickedIndex ? "not-selected" : ""
-                    }`}
-                    style={{
-                      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(${image.url})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      position: "relative",
-                      backgroundRepeat: "no-repeat",
-                      border: "1px solid grey",
-                    }}
-                    onClick={() => expand(index)}
-                  >
-                    {index !== clickedIndex && (
-                      <div className="white-overlay"></div>
-                    )}
-                    <div className="item-content">
-                      <div className={`item-title item-title-${index}`}>
-                        {image.title}
-                        {image.subtitle && (
-                          <div
-                            className={`item-subtitle item-subtitle-${index}`}
-                          >
-                            {image.subtitle.split("\n").map((line, i) => (
-                              <div key={i}>{line}</div>
-                            ))}
-                          </div>
-                        )}
-                      </div>
+
+          {/* Slider for Team Members */}
+          <div className="col-lg-9">
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={30}
+              navigation={true}
+              modules={[Navigation]}
+              className={styles.swiperContainer}
+              breakpoints={{
+                0: { slidesPerView: 1 },
+                576: { slidesPerView: 2 },
+                992: { slidesPerView: 3 },
+              }}
+            >
+              {teamData.map((member, index) => (
+                <SwiperSlide key={index}>
+                  <div className={styles.card}>
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className={`img-fluid ${styles.image}`}
+                    />
+                    <div className={styles.cardFooter}>
+                      <span>{member.name}</span>
+                      <span>{member.designation}</span>
                     </div>
                   </div>
-                ))}
-              </div>
-            )}
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>
@@ -184,4 +93,4 @@ const Slider2 = () => {
   );
 };
 
-export default Slider2;
+export default TeamSection;

@@ -1,0 +1,80 @@
+.testimonialWrapper {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  overflow: hidden;
+  background: white;
+}
+
+.left {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 60px 40px;
+  border-bottom-right-radius: 80px;
+}
+
+.quoteIcon {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1.3;
+  letter-spacing: 05px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: white;
+}
+
+.slideContent {
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.avatarDim {
+  width: 90px;
+  height: 90px;
+  opacity: 0.5;
+  object-fit: contain;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.active {
+  opacity: 1;
+  border-color: #3ed2cc;
+}
+.containertext {
+  padding: 90px 140px;
+}
+.titleArea {
+  text-align: center;
+  padding: 50px;
+}
+.titleArea h2 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 03px;
+  color: var(--primary-color);
+}
+.slideContent h4 {
+  padding: 0px 5rem !important;
+}

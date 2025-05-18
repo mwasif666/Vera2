@@ -151,9 +151,6 @@ const Services = () => {
                           {service.description}
                         </p>
                       </div>
-                      <a href="#" className={styles.serviceBtn}>
-                        <i className="far fa-plus"></i>
-                      </a>
                     </div>
                   </SwiperSlide>
                 ))}

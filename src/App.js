@@ -9,6 +9,8 @@ import Services from "./Pages/Services";
 import Footer from "./Pages/Footer";
 import LadiesServices from "./Pages/LadiesServices";
 import OddsGraph from "./Pages/Grapht";
+import AboutUs from "./Pages/About";
+import BlogPost from "./Pages/Blog";
 
 const Preloader = () => {
   return (
@@ -53,10 +55,11 @@ const AppWrapper = () => {
         <Routes location={location}>
           <Route path="/" element={<HomePage />} />
           <Route path="/Products" element={<Product />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/GentsServices" element={<GentsServices />} />
           <Route path="/LadiesServices" element={<LadiesServices />} />
-          <Route path="/OddsGraph" element={<OddsGraph />} />
+          <Route path="/Blog" element={<BlogPost />} />
         </Routes>
         <Footer />
       </div>
