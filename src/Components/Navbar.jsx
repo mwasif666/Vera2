@@ -36,19 +36,19 @@ function Navbar() {
         </div>
         <nav ref={navRef} className="main-nav">
           <Link to="/AboutUs" className="nav-link" onClick={closeNavbar}>
-            ABOUT US
+            About us
           </Link>
           <Link to="/Services" className="nav-link" onClick={closeNavbar}>
-            SERVICES
+            Services
           </Link>
           <Link to="/Products" className="nav-link" onClick={closeNavbar}>
-            PRODUCTS
+            Products
           </Link>
           <Link to="/Blog" className="nav-link" onClick={closeNavbar}>
-            BLOG
+            Blog
           </Link>
           <Link to="/Contact" className="nav-link" onClick={closeNavbar}>
-            CONTACT
+            Contact
           </Link>
         </nav>
         <button className="nav-btn" onClick={showNavbar}>

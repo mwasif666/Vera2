@@ -9,6 +9,7 @@ import TeamSection from "./Team";
 import ProductPage from "../Components/Product";
 import BlogPost from "./Blog";
 import Brands from "./Brands";
+import MasonryGallery from "./GridStyle";
 
 const HomePage = () => {
   return (
@@ -22,6 +23,7 @@ const HomePage = () => {
       <TestimonialSection />
       <WhyVera />
       <BlogPost />
+      <MasonryGallery />
     </div>
   );
 };
