@@ -24,7 +24,7 @@
 }
 .video-container .sectionTitle {
   font-family: "Montserrat", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-top: 120px;
 }
 .video-thumbnail,
@@ -94,5 +94,8 @@
     width: 320px;
     height: auto;
     object-fit: contain;
+  }
+  .ctaButton {
+    width: 270px;
   }
 }

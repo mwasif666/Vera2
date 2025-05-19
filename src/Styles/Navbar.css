@@ -110,4 +110,7 @@
   .nav-link {
     font-size: 1.2rem;
   }
+  .logo img {
+    width: 100px !important;
+  }
 }

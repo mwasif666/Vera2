@@ -11,11 +11,11 @@ const AboutUs = () => {
             <img src="/assets/images/About/about1.png" alt="" />
           </Col>
           <Col lg={6} className={styles.contentWrapper}>
-            <h1 className={styles.title}>About Us</h1>
+            <h4 className={styles.title}>About Us</h4>
 
-            <p className={styles.tagline}>
+            <h1 className={styles.tagline}>
               We believe beauty is personal and limitless.
-            </p>
+            </h1>
 
             <div className={styles.mission}>
               <p>

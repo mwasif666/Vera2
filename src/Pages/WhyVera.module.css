@@ -97,6 +97,16 @@
   .salonImage {
     min-height: 300px;
   }
+  .contentWrapper {
+    padding: 1rem !important;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    background-color: #797663;
+    color: white;
+    width: 100%;
+    border-radius: 0px;
+  }
 }
 
 @media (min-width: 992px) {

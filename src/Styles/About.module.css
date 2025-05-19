@@ -19,7 +19,7 @@
 
 .title {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.2rem;
   margin-bottom: 2rem;
   color: #333;
@@ -76,7 +76,7 @@
 }
 @media (max-width: 768px) {
   .title {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
   }
 
   .tagline {

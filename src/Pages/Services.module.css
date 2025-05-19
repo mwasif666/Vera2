@@ -34,7 +34,7 @@
 }
 
 .secTitle {
-  font-size: 40px;
+  font-size: 1.9rem;
   font-weight: 700;
   margin-bottom: 0;
   color: var(--title-color);
@@ -265,7 +265,6 @@
   }
 
   .tabButtons {
-    flex-direction: column;
     border-radius: 10px;
   }
 

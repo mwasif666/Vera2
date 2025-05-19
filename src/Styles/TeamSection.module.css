@@ -27,7 +27,7 @@
 }
 
 .heading {
-  font-size: 28px;
+  font-size: 1.9rem;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -133,5 +133,8 @@
 @media (max-width: 768px) {
   .mySwiper {
     padding: 0 30px;
+  }
+  .leftBox {
+    height: 100%;
   }
 }

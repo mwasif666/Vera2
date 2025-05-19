@@ -25,7 +25,14 @@ h2 {
   font-family: "Bodoni", sans-serif;
 }
 h2 {
-  font-size: 40px !important;
+  font-size: 1.9rem !important;
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+h2 {
+  font-size: 1.9 !important;
 }
 p {
   font-family: "Montserrat", sans-serif;
@@ -89,4 +96,9 @@ p {
 .content-hidden {
   opacity: 0;
   pointer-events: none;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
 }

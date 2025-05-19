@@ -43,7 +43,10 @@ const TestimonialSection = () => {
           className={`col-md-6 d-flex align-items-center justify-content-center ${styles.left}`}
         >
           <div className={styles.containertext}>
-            <h1 className={styles.title}> What Our Customers Are Saying</h1>
+            <h1 className={styles.title}>
+              {" "}
+              What Our <br /> Customers <br /> Are Saying
+            </h1>
           </div>
         </div>
 

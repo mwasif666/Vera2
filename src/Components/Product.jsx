@@ -22,21 +22,21 @@ const Product = () => {
                 <h1>Your Everyday Essentials,</h1>
               </div>
               <div className={`${styles.imagesProducts} row`}>
-                <div className="col-md-4">
+                <div className="col-md-4 mb-4">
                   <img
                     src="/assets/images/Products/1.png"
                     width="100%"
                     alt=""
                   />
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 mb-4">
                   <img
                     src="/assets/images/Products/2.png"
                     width="100%"
                     alt=""
                   />
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 mb-4">
                   <img
                     src="/assets/images/Products/3.png"
                     width="100%"
@@ -45,7 +45,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 mb-4">
               <img
                 src="/assets/images/Products/banner.jpg"
                 width="100%"
