@@ -1,6 +1,10 @@
 .aboutUs {
   padding: 5rem 0;
-  background-image: url(../../public/assets/images/About/about.png);
+  background-image: linear-gradient(
+      rgba(242, 243, 238, 0.4),
+      rgba(242, 243, 238, 0.4)
+    ),
+    url(../../public/assets/images/Banners/patt.png);
   display: flex;
   align-items: center;
   width: 100%;

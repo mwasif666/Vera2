@@ -2,7 +2,15 @@
 
 .blogSection {
   padding: 4rem 0;
-  background-color: #f8f9fa;
+  background-image: linear-gradient(
+      rgba(242, 243, 238, 0.4),
+      rgba(242, 243, 238, 0.4)
+    ),
+    url(../../public/assets/images/Banners/patt.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .blogCard {

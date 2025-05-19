@@ -6,7 +6,11 @@
   padding: 100px 0;
 }
 .space .container {
-  background-image: url(../../public/assets/images/About/about.png);
+  background-image: linear-gradient(
+      rgba(242, 243, 238, 0.4),
+      rgba(242, 243, 238, 0.4)
+    ),
+    url(../../public/assets/images/Banners/patt.png);
   padding: 50px;
   border-radius: 50px;
   width: 100%;
@@ -93,7 +97,7 @@
 }
 
 .serviceStyle5 {
-  background-color: #e4e1d6;
+  background-color: rgba(242, 243, 238, 1);
   text-align: center;
   padding: 50px 10px;
   position: relative;
@@ -107,7 +111,7 @@
 
 .serviceStyle5:hover {
   z-index: 3;
-  background-color: #e4e1d6;
+  background-color: rgba(242, 243, 238, 1);
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
