@@ -22,7 +22,7 @@ const BlogPost = () => {
             <div className={styles.blogCard} onClick={handleShow}>
               {/* Blog Image */}
               <img
-                src="/assets/images/banners/5.jpg"
+                src="/assets/images/Banners/5.jpg"
                 alt="Beauty and health through water"
                 className={styles.blogImage}
               />
@@ -37,7 +37,7 @@ const BlogPost = () => {
             <div className={styles.blogCard} onClick={handleShow}>
               {/* Blog Image */}
               <img
-                src="/assets/images/banners/5.jpg"
+                src="/assets/images/Banners/5.jpg"
                 alt="Beauty and health through water"
                 className={styles.blogImage}
               />
