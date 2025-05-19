@@ -32,9 +32,9 @@ const HomeVideo = () => {
       <div className="video-thumbnail" style={{ opacity: showVideo ? 0 : 1 }}>
         <img src={thumbnailSrc} alt="Video thumbnail" />
         <div className="thumbnail-overlay">
-          <h2 className="sectionTitle">
+          <h1 className="sectionTitle">
             Be Bold. <em>Be Subtle</em>. Be You
-          </h2>
+          </h1>
           <div className="row book-button">
             <div className="col-lg-6">
               <button className="ctaButton">Book Appointment</button>
@@ -62,10 +62,10 @@ const HomeVideo = () => {
           <source src={videoSrc} type="video/mp4" />
         </video>
         <div className="video-overlay">
-          <h2 className="sectionTitle">
+          <h1 className="sectionTitle">
             {" "}
             Be Bold. <em>Be Subtle</em>. Be You
-          </h2>
+          </h1>
           <div className="row d-flex justify-content-center book-button w-100">
             <div className="col-lg-6 text-lg-end">
               <button className="ctaButton">Book Appointment</button>

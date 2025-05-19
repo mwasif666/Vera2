@@ -24,6 +24,9 @@ h1,
 h2 {
   font-family: "Bodoni", sans-serif;
 }
+h2 {
+  font-size: 40px !important;
+}
 p {
   font-family: "Montserrat", sans-serif;
 }

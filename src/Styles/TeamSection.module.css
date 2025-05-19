@@ -1,6 +1,10 @@
 .sectionWrapper {
   padding: 60px 0;
-  background-color: #dce5d5;
+  background-image: url(../../public/assets/images/About/about.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .leftBox {

@@ -4,11 +4,8 @@ import HomePage from "./Pages/HomePage";
 import Navbar from "./Components/Navbar";
 import "./App.css";
 import Product from "./Pages/Products";
-import GentsServices from "./Pages/GentsServices";
 import Services from "./Pages/Services";
 import Footer from "./Pages/Footer";
-import LadiesServices from "./Pages/LadiesServices";
-import OddsGraph from "./Pages/Grapht";
 import AboutUs from "./Pages/About";
 import BlogPost from "./Pages/Blog";
 
@@ -57,8 +54,7 @@ const AppWrapper = () => {
           <Route path="/Products" element={<Product />} />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Services" element={<Services />} />
-          <Route path="/GentsServices" element={<GentsServices />} />
-          <Route path="/LadiesServices" element={<LadiesServices />} />
+
           <Route path="/Blog" element={<BlogPost />} />
         </Routes>
         <Footer />

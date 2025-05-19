@@ -16,12 +16,7 @@ const BlogPost = () => {
   return (
     <section className={styles.blogSection}>
       <div className="container">
-        <div
-          className="row"
-          style={{
-            marginTop: "150px",
-          }}
-        >
+        <div className="row">
           <div className="col-md-6 mx-auto">
             <div className={styles.blogCard}>
               {/* Blog Image */}
