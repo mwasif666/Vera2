@@ -4,11 +4,11 @@ import styles from "../Styles/Brands.module.css";
 const Brands = () => {
   const images = [
     "https://1000logos.net/wp-content/uploads/2020/08/OPI_logo_PNG1.png",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIkop4sxldcolb-WAGEJ1oWpw7MfjB_8JvFg&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1D-iOQP4JZ4FNwyg2bhbzBUXyD1yx_Y_bRA&s",
+    "https://nashiargan.com/wp-content/uploads/sites/2/2024/03/body_logo.png",
+    "/assets/images/logo/brand1.png",
     "https://1000logos.net/wp-content/uploads/2020/08/OPI_logo_PNG1.png",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIkop4sxldcolb-WAGEJ1oWpw7MfjB_8JvFg&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1D-iOQP4JZ4FNwyg2bhbzBUXyD1yx_Y_bRA&s",
+    "https://nashiargan.com/wp-content/uploads/sites/2/2024/03/body_logo.png",
+    "/assets/images/logo/brand1.png",
   ];
 
   return (

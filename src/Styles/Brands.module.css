@@ -1,7 +1,7 @@
 .marqueeWrapper {
   overflow: hidden;
   width: 100%;
-  background-color: #fff;
+  background-color: #f3f2ee;
 }
 
 .marquee {
@@ -16,6 +16,10 @@
   object-fit: contain;
   margin-right: 20px;
   flex-shrink: 0;
+
+  /* If you need to remove white backgrounds from JPGs: */
+  mix-blend-mode: multiply; /* Removes white backgrounds */
+  /* OR */
 }
 .contentbrands h1 {
   padding-bottom: 20px;
