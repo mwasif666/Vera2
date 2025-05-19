@@ -43,16 +43,13 @@ const TeamSection = () => {
             <div className={`${styles.leftBox} p-4`}>
               <p className={styles.tagline}>JOIN THE TEAM</p>
               <h2 className={styles.heading}>
-                Personalized
-                <br />
-                Coaching
+                Personalized <br /> Beauty Consultations
               </h2>
               <p className={styles.description}>
-                One-on-one sessions with our fitness and yoga experts, get
-                personalized guidance and encouragement to reach your specific
-                goals.
+                One-on-one sessions with our expert stylists and skincare
+                specialists—get tailored advice, treatments, and care
+                designed just for you.
               </p>
-              <button className={styles.viewMore}>View more</button>
             </div>
           </div>
 

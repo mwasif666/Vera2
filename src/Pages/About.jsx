@@ -8,7 +8,7 @@ const AboutUs = () => {
       <Container>
         <Row className="justify-content-center">
           <Col lg={6} className={styles.ImageAbout}>
-            <img src="/assets/images/About/about1.png" alt="" />
+            <img src="/assets/images/Banners/about2.jpg" alt="" />
           </Col>
           <Col lg={6} className={styles.contentWrapper}>
             <h4 className={styles.title}>About Us</h4>

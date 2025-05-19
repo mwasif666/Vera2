@@ -16,9 +16,10 @@ const BlogPost = () => {
   return (
     <section className={styles.blogSection}>
       <div className="container">
+        <h2 className="text-center mb-5">Our Blog</h2>
         <div className="row">
           <div className="col-md-6 mx-auto">
-            <div className={styles.blogCard}>
+            <div className={styles.blogCard} onClick={handleShow}>
               {/* Blog Image */}
               <img
                 src="/assets/images/banners/5.jpg"
@@ -27,27 +28,13 @@ const BlogPost = () => {
               />
 
               <div className={styles.blogHeader}>
-                <h2 className={styles.blogTitle}>BEAUTY</h2>
-                <h3 className={styles.blogSubtitle}>
-                  HEALTH BY OR THROUGH WATER
-                </h3>
-              </div>
-
-              <div className={styles.blogContent}>
-                <p className={styles.blogExcerpt}>
-                  We think your skin should look and feel its best no matter
-                  what. Nourish your outer inner beauty with our essential oil
-                  infused beauty products. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <button className={styles.readMoreBtn} onClick={handleShow}>
-                  READ MORE
-                </button>
+                <h3 className={styles.blogSubtitle}>2/4/20 • Business</h3>
+                <h2 className={styles.blogTitle}>Health by or through Water</h2>
               </div>
             </div>
           </div>
           <div className="col-md-6 mx-auto">
-            <div className={styles.blogCard}>
+            <div className={styles.blogCard} onClick={handleShow}>
               {/* Blog Image */}
               <img
                 src="/assets/images/banners/5.jpg"
@@ -56,22 +43,8 @@ const BlogPost = () => {
               />
 
               <div className={styles.blogHeader}>
-                <h2 className={styles.blogTitle}>BEAUTY</h2>
-                <h3 className={styles.blogSubtitle}>
-                  HEALTH BY OR THROUGH WATER
-                </h3>
-              </div>
-
-              <div className={styles.blogContent}>
-                <p className={styles.blogExcerpt}>
-                  We think your skin should look and feel its best no matter
-                  what. Nourish your outer inner beauty with our essential oil
-                  infused beauty products. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <button className={styles.readMoreBtn} onClick={handleShow}>
-                  READ MORE
-                </button>
+                <h3 className={styles.blogSubtitle}>2/4/20 • Business</h3>
+                <h2 className={styles.blogTitle}>Health by or through Water</h2>
               </div>
             </div>
           </div>
