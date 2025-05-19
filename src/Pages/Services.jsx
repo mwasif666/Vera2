@@ -226,9 +226,11 @@ const Services = () => {
 
         {/* Price List Button */}
         <div className="text-center mt-2">
-          <a href="#" className={`btn ${styles.priceListBtn}`}>
+          <button
+            className={`btn btn-outline-dark btn-lg ${styles.priceListBtn}`}
+          >
             Price List
-          </a>
+          </button>
         </div>
       </div>
     </section>

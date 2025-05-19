@@ -8,6 +8,7 @@ import TestimonialSection from "./Testimonial";
 import TeamSection from "./Team";
 import ProductPage from "../Components/Product";
 import BlogPost from "./Blog";
+import Brands from "./Brands";
 
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
       <TeamSection />
       <ProductPage />
       <BlogPost />
+      <Brands />
     </div>
   );
 };

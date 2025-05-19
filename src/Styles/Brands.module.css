@@ -1,0 +1,31 @@
+.marqueeWrapper {
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+}
+
+.marquee {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  gap: 150px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.contentbrands h1 {
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

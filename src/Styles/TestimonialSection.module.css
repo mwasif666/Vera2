@@ -1,8 +1,17 @@
 .testimonialWrapper {
-  background-color: #f9f9f9;
   padding: 40px 0;
   overflow: hidden;
-  background: white;
+
+  padding: 5rem 0;
+  background-image: linear-gradient(
+      rgba(242, 243, 238, 0.4),
+      rgba(242, 243, 238, 0.4)
+    ),
+    url(../../public/assets/images/Banners/patt.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .left {
