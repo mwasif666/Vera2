@@ -7,8 +7,8 @@
 }
 .space .container {
   background-image: linear-gradient(
-      rgba(242, 243, 238, 0.4),
-      rgba(242, 243, 238, 0.4)
+      rgba(228, 225, 214, 1),
+      rgba(228, 225, 214, 1)
     ),
     url(../../public/assets/images/Banners/patt.png);
   padding: 50px;
@@ -97,7 +97,7 @@
 }
 
 .serviceStyle5 {
-  background-color: rgb(228, 225, 214);
+  background-color: rgba(242, 243, 238, 1);
   text-align: center;
   padding: 50px 10px;
   position: relative;
@@ -111,7 +111,7 @@
 
 .serviceStyle5:hover {
   z-index: 3;
-  background-color: rgb(228, 225, 214);
+  background-color: rgba(242, 243, 238, 1);
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
@@ -197,7 +197,14 @@
   color: var(--title-color);
   font-size: 18px;
 }
-
+.swiperButtonPrev {
+  position: relative;
+  left: -40px;
+}
+.swiperButtonNext {
+  position: relative;
+  right: -40px;
+}
 .swiperButtonPrev:hover,
 .swiperButtonNext:hover {
   background-color: var(--theme-color);
