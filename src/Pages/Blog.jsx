@@ -5,7 +5,7 @@ import styles from "../Styles/Blog.module.css";
 // You can replace this with your actual image import
 // import blogImage from './assets/beauty-water.jpg';
 // Or use a placeholder image URL
-const blogImage = "/assets/images/banners/5.jpg";
+const blogImage = "/assets/images/Banners/5.jpg";
 
 const BlogPost = () => {
   const [showModal, setShowModal] = useState(false);
