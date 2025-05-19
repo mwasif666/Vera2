@@ -18,7 +18,7 @@ const WhyVera = () => {
           <div className="col-md-10 mb-4 mb-md-0">
             <div className={styles.imageWrapper}>
               <img
-                src="/assets/images/banners/5.jpg"
+                src="/assets/images/Banners/5.jpg"
                 alt="Vera Salon Interior"
                 className={styles.Whyvera}
               />
