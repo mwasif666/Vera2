@@ -13,13 +13,13 @@ const Product = () => {
                   <div className="col-lg-6 ">
                     <h2>Vera Products</h2>
                   </div>
-                  <div className="col-lg-6">
-                    <button className={styles.ctaButton}>Explore More</button>
-                  </div>
                 </div>
               </div>
               <div className={styles.contentsecond}>
                 <h1>Your Everyday Essentials,</h1>
+              </div>
+              <div>
+                <button className={styles.ctaButton}>Explore More</button>
               </div>
               <div className={`${styles.imagesProducts} row`}>
                 <div className="col-md-4 mb-4">

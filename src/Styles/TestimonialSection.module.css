@@ -15,10 +15,13 @@
 }
 
 .left {
-  background-color: var(--primary-color);
+  background-image: url(../../public/assets/images/Banners/what.jpg);
   color: white;
-  padding: 60px 40px;
-  border-bottom-right-radius: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 170px;
 }
 
 .quoteIcon {
@@ -28,10 +31,11 @@
 }
 
 .title {
-  font-size: 80px;
   font-weight: bold;
   line-height: 1.3;
   letter-spacing: 05px;
+  position: relative;
+  left: 260px;
 }
 
 .right {

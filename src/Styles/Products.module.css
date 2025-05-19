@@ -15,6 +15,7 @@
   font-family: "Montserrat", sans-serif;
   color: white;
   border-radius: 30px;
+  margin-bottom: 40px;
 }
 .conentfirst h2 {
   font-family: "Montserrat", sans-serif;
@@ -30,7 +31,6 @@
   font-style: italic;
   font-size: 4.5rem;
   margin-top: 20px;
-  margin-bottom: 40px;
 }
 .imagesProducts img {
   height: 290px !important;

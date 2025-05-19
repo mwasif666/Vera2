@@ -39,9 +39,7 @@ const TestimonialSection = () => {
 
       <div className="row">
         {/* Left Side */}
-        <div
-          className={`col-md-6 d-flex align-items-center justify-content-center ${styles.left}`}
-        >
+        <div className={`col-md-6  ${styles.left}`}>
           <div className={styles.containertext}>
             <h1 className={styles.title}>
               {" "}

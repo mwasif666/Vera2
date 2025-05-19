@@ -14,14 +14,14 @@ const HomePage = () => {
   return (
     <div>
       <HomeVideo />
-      <About />
       <Services />
-      <WhyVera />
-      <TestimonialSection />
-      <TeamSection />
       <ProductPage />
-      <BlogPost />
       <Brands />
+      <About />
+      <TeamSection />
+      <TestimonialSection />
+      <WhyVera />
+      <BlogPost />
     </div>
   );
 };
