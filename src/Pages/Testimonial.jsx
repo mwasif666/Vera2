@@ -29,57 +29,59 @@ const testimonials = [
 
 const TestimonialSection = () => {
   return (
-    <div className={`container-fluid ${styles.testimonialWrapper}`}>
-      <div className={styles.titleArea}>
-        <h2 className={styles.secTitle}>Testimonial</h2>
-        <h5 className={styles.secSubtitle}>
-          Every experience at Vera leaves a lasting impression.
-        </h5>
-      </div>
-
-      <div className="row">
-        {/* Left Side */}
-        <div className={`col-md-6  ${styles.left}`}>
-          <div className={styles.containertext}>
-            <h1 className={styles.title}>
-              {" "}
-              What Our <br /> Customers <br /> Are Saying
-            </h1>
-          </div>
+    <div className={` ${styles.testimonialWrapper}`}>
+      <div className="container">
+        <div className={styles.titleArea}>
+          <h2 className={styles.secTitle}>Testimonial</h2>
+          <h5 className={styles.secSubtitle}>
+            Every experience at Vera leaves a lasting impression.
+          </h5>
         </div>
 
-        {/* Right Side - Swiper Slider */}
-        <div className={`col-md-6 ${styles.right}`}>
-          <Swiper
-            modules={[Autoplay, EffectFade]}
-            effect="fade"
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            slidesPerView={1}
-            loop={true}
-            className="h-100"
-          >
-            {testimonials.map((item, index) => (
-              <SwiperSlide key={index} className={styles.slide}>
-                <div className={`text-center ${styles.slideContent}`}>
-                  <h4 className="mb-4">{item.text}</h4>
-                  <div className="d-flex justify-content-center mb-3">
-                    {testimonials.map((t, i) => (
-                      <img
-                        key={i}
-                        src={t.img}
-                        className={`rounded-circle mx-2 ${styles.avatarDim} ${
-                          i === index ? styles.active : ""
-                        }`}
-                        alt={t.name}
-                      />
-                    ))}
+        <div className="row">
+          {/* Left Side */}
+          <div className={`col-md-6  ${styles.left}`}>
+            <div className={styles.containertext}>
+              <h2 className={styles.title}>
+                {" "}
+                What Our <br /> Customers <br /> Are Saying
+              </h2>
+            </div>
+          </div>
+
+          {/* Right Side - Swiper Slider */}
+          <div className={`col-md-6 ${styles.right}`}>
+            <Swiper
+              modules={[Autoplay, EffectFade]}
+              effect="fade"
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              slidesPerView={1}
+              loop={true}
+              className="h-100"
+            >
+              {testimonials.map((item, index) => (
+                <SwiperSlide key={index} className={styles.slide}>
+                  <div className={`text-center ${styles.slideContent}`}>
+                    <h4 className="mb-4">{item.text}</h4>
+                    <div className="d-flex justify-content-center mb-3">
+                      {testimonials.map((t, i) => (
+                        <img
+                          key={i}
+                          src={t.img}
+                          className={`rounded-circle mx-2 ${styles.avatarDim} ${
+                            i === index ? styles.active : ""
+                          }`}
+                          alt={t.name}
+                        />
+                      ))}
+                    </div>
+                    <strong>{item.name}</strong>
+                    <p className="text-muted m-0">{item.role}</p>
                   </div>
-                  <strong>{item.name}</strong>
-                  <p className="text-muted m-0">{item.role}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
     </div>

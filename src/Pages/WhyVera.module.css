@@ -49,7 +49,7 @@
   letter-spacing: 1px;
   margin-bottom: 2rem;
   position: relative;
-  color: white;
+  color: white !important;
   text-align: center;
 }
 

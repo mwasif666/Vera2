@@ -26,7 +26,7 @@ const breakpointColumnsObj = {
 const MasonryGallery = () => {
   return (
     <div className="container py-5">
-      <h2 className="text-center mb-4">We Style</h2>
+      <h2 className=" text-center w-100 mb-4">We Style</h2>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="my-masonry-grid"

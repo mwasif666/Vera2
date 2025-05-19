@@ -20,10 +20,10 @@ const HomePage = () => {
       <Brands />
       <About />
       <TeamSection />
+      <MasonryGallery />
       <TestimonialSection />
       <WhyVera />
       <BlogPost />
-      <MasonryGallery />
     </div>
   );
 };

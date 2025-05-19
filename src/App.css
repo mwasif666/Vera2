@@ -26,8 +26,16 @@ h2 {
 }
 h2 {
   font-size: 1.9rem !important;
+  color: #23272b !important;
+  display: inline-block;
+  font-weight: 700 !important;
+  margin-bottom: 0;
+  position: relative;
 }
-
+.btn {
+  border-radius: 30px;
+  padding: 1rem 4rem !important;
+}
 h1 {
   font-size: 3rem !important;
 }
