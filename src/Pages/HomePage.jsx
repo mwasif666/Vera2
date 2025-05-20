@@ -10,6 +10,7 @@ import ProductPage from "../Components/Product";
 import BlogPost from "./Blog";
 import Brands from "./Brands";
 import MasonryGallery from "./GridStyle";
+import Gallery from "./Gaallery";
 
 const HomePage = () => {
   return (
@@ -20,7 +21,8 @@ const HomePage = () => {
       <Brands />
       <About />
       <TeamSection />
-      <MasonryGallery />
+      <Gallery />
+      {/* <MasonryGallery /> */}
       <TestimonialSection />
       <WhyVera />
       <BlogPost />
