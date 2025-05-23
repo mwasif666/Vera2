@@ -83,7 +83,7 @@ const Services = () => {
           <div className="col-md-9 col-lg-7 col-xl-6">
             <div className={styles.titleArea}>
               <span className={styles.secSubtitle}>Our Services</span>
-              <h2 className={styles.secTitle}>Your Style, Our Expertise</h2>
+              <h1 className={styles.secTitle}>Your Style, Our Expertise</h1>
             </div>
           </div>
         </div>

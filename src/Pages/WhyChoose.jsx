@@ -28,7 +28,7 @@ const WhyVera = () => {
           {/* Content Column */}
           <div className="col-md-6">
             <div className={styles.contentWrapper}>
-              <h2 className={`${styles.title} mb-4`}>Why Choosing Vera?</h2>
+              <h2 className={`${styles.title} mb-0`}>Why Choosing Vera?</h2>
               <div className={styles.featuresList}>
                 {features.map((feature, index) => (
                   <div key={index} className={` ${styles.featureItem}`}>

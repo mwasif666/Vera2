@@ -38,6 +38,11 @@ h2 {
 }
 h1 {
   font-size: 3rem !important;
+
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 0px !important;
+  font-family: "Bodoni2";
 }
 h2 {
   font-size: 1.9 !important;

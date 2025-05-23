@@ -64,7 +64,8 @@
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
   border: 2px solid white;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  border-radius: 60px;
 }
 .featureText {
   line-height: 1.5;

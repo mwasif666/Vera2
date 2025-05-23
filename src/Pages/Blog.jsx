@@ -16,7 +16,7 @@ const BlogPost = () => {
   return (
     <section className={styles.blogSection}>
       <div className="container">
-        <h2 className="text-center w-100 mb-5">Our Blog</h2>
+        <h1 className="text-center w-100 mb-5">Our Blog</h1>
         <div className="row">
           <div className="col-md-6 my-auto">
             <div className={styles.blogCard} onClick={handleShow}>
@@ -27,7 +27,7 @@ const BlogPost = () => {
                 className={styles.blogImage}
               />
 
-              <div className={styles.blogHeader}>
+              <div className={styles.blogHeader2}>
                 <h3 className={styles.blogSubtitle}>2/4/20 • Business</h3>
                 <h2 className={styles.blogTitle}>Health by or through Water</h2>
               </div>
@@ -35,23 +35,6 @@ const BlogPost = () => {
           </div>
           <div className="col-md-6">
             <div className={`${styles.secBlog} row`}>
-              <div className="col-md-12 mx-auto">
-                <div className={styles.blogCard} onClick={handleShow}>
-                  {/* Blog Image */}
-                  <img
-                    src="/assets/images/Banners/5.jpg"
-                    alt="Beauty and health through water"
-                    className={styles.blogImage}
-                  />
-
-                  <div className={styles.blogHeader}>
-                    <h3 className={styles.blogSubtitle}>2/4/20 • Business</h3>
-                    <h2 className={styles.blogTitle}>
-                      Health by or through Water
-                    </h2>
-                  </div>
-                </div>
-              </div>
               <div className="col-md-12 mx-auto">
                 <div className={styles.blogCard} onClick={handleShow}>
                   {/* Blog Image */}

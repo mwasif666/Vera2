@@ -9,7 +9,7 @@ const Headings = () => {
         <Row className=" text-center justify-content-center">
           <Col lg={12} className={styles.contentWrapper}>
             <h1 className={styles.tagline2}>
-              <em>Where beauty meets precision.</em>
+              <em>Where Beauty Meets Precision.</em>
             </h1>
 
             <div className={styles.mission}>

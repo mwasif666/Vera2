@@ -11,31 +11,19 @@ const Product = () => {
               <div className={styles.conentfirst}>
                 <div className="row d-flex align-items-center w-100">
                   <div className="col-lg-6 ">
-                    <h2
-                      style={{
-                        paddingLeft: "120px",
-                      }}
-                    >
-                      Vera Products
-                    </h2>
+                    <span className={styles.secSubtitle}>Vera Products</span>
                   </div>
                 </div>
               </div>
               <div className={styles.contentsecond}>
-                <h1
-                  style={{
-                    paddingLeft: "120px",
-                  }}
-                >
-                  Your Everyday Essentials,
-                </h1>
+                <h1>Your Everyday Essentials,</h1>
               </div>
-              <div
-                style={{
-                  paddingLeft: "120px",
-                }}
-              >
-                <button className={styles.ctaButton}>Explore More</button>
+              <div>
+                <button
+                  className={`btn btn-outline-dark btn-lg text-white ${styles.priceListBtn2}`}
+                >
+                  Explore More
+                </button>
               </div>
               <div className={`${styles.imagesProducts} row`}>
                 <div className="col-md-4 mb-4">

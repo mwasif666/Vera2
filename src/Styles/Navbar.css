@@ -4,11 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #e4e1d6; /* or your preferred background */
+  background-color: #e4e1d6;
   z-index: 100;
   position: absolute;
   top: 30px;
   border-radius: 50px;
+  width: 900px;
 }
 
 /* Logo styles */
@@ -37,7 +38,7 @@
   text-decoration: none;
   transition: color 0.3s ease;
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .nav-link:hover {

@@ -29,7 +29,7 @@ function Navbar() {
           <Link to="/" className="logo-link">
             <img
               src="./assets/images/logo/logo2.png"
-              width="150px"
+              width="90px"
               alt="Main logo"
             />
           </Link>

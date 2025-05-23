@@ -2,26 +2,23 @@
   background-color: #151412;
   color: white;
 }
-.ctaButton {
-  background-color: transparent;
-  border: 1px solid white;
-  padding: 1rem 4rem;
-  font-size: 0.9rem;
+.priceListBtn2 {
+  background: transparent;
+  padding: 15px 50px !important;
+  border-radius: 50px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  cursor: pointer;
+  letter-spacing: 1px;
   transition: all 0.3s ease;
-  margin-top: 1rem;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  border-radius: 30px;
+  border: 2px solid white !important;
   margin-bottom: 40px;
+  margin-top: 10px;
 }
-.conentfirst h2 {
+.conentfirst span {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.9rem;
   font-weight: 500 !important;
   color: white !important;
+  line-height: 2 !important;
 }
 
 .conentfirst {
@@ -30,8 +27,7 @@
 .contentsecond h1 {
   font-family: "Bodoni", sans-serif;
   font-style: italic;
-  font-size: 4.5rem;
-  margin-top: 20px;
+  font-size: 4rem !important;
 }
 .imagesProducts img {
   height: 290px !important;

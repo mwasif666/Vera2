@@ -5,26 +5,26 @@
   overflow: hidden;
 }
 .ctaButton {
-  background-color: transparent;
-  border: 1px solid white;
-  padding: 0.4rem 3rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  background-color: initial;
+  border: 1px solid #fff;
+  border-radius: 60px;
+  color: #fff;
   cursor: pointer;
-  transition: all 0.3s ease;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
   margin-top: 1rem;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  border-radius: 20px;
-  width: 400px;
+  padding: 1.3rem 0rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  width: 360px;
 }
 .sectionTitle em {
   font-family: "Bodoni2";
 }
 .video-container .sectionTitle {
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+  font-size: 4.5rem !important;
   margin-top: 120px;
 }
 .video-thumbnail,

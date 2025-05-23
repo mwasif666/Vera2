@@ -32,7 +32,7 @@ const TestimonialSection = () => {
     <div className={` ${styles.testimonialWrapper}`}>
       <div className="container">
         <div className={styles.titleArea}>
-          <h2 className={styles.secTitle}>Testimonial</h2>
+          <h1 className={styles.secTitle}>Testimonial</h1>
           <h5 className={styles.secSubtitle}>
             Every experience at Vera leaves a lasting impression.
           </h5>

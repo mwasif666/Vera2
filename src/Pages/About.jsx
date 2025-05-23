@@ -14,7 +14,7 @@ const AboutUs = () => {
             <h4 className={styles.title}>About Us</h4>
 
             <h1 className={styles.tagline}>
-              We believe beauty is personal and limitless.
+              We Believe Beauty is <br /> Personal and Limitless.
             </h1>
 
             <div className={styles.mission}>
