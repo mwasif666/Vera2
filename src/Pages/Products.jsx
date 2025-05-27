@@ -6,7 +6,7 @@ const Product = () => {
   return (
     <>
       <ProductHead />
-      <ProductSection />
+      {/* <ProductSection /> */}
     </>
   );
 };

@@ -72,6 +72,13 @@ const BlogPost = () => {
             </div>
           </div>
         </div>
+        <div className="text-center mt-2">
+          <button
+            className={`btn btn-outline-dark btn-lg ${styles.priceListBtn}`}
+          >
+            Read more
+          </button>
+        </div>
       </div>
 
       {/* Modal for full blog content */}

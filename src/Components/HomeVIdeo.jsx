@@ -36,10 +36,10 @@ const HomeVideo = () => {
             Be Bold. <em>Be Subtle</em>. Be You
           </h1>
           <div className="row book-button">
-            <div className="col-lg-6">
+            <div className="col-lg-12">
               <button className="ctaButton">Book Appointment</button>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-12">
               <button className="ctaButton">
                 Mon - Fri | 10:00 am - 9:00 pm
               </button>
@@ -67,11 +67,11 @@ const HomeVideo = () => {
             Be Bold. <em>Be Subtle</em>. Be You
           </h1>
           <div className="row d-flex justify-content-center book-button w-100">
-            <div className="col-lg-6 text-lg-end">
+            <div className="col-lg-12">
               <button className="ctaButton">Book Appointment</button>
             </div>
-            <div className="col-lg-6 text-lg-start">
-              <button className="ctaButton">
+            <div className="col-lg-12">
+              <button className="ctaButton2">
                 Mon - Fri | 10:00 am - 9:00 pm
               </button>
             </div>

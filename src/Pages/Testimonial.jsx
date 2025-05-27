@@ -42,10 +42,10 @@ const TestimonialSection = () => {
           {/* Left Side */}
           <div className={`col-md-6  ${styles.left}`}>
             <div className={styles.containertext}>
-              <h2 className={styles.title}>
+              <h1 className={styles.title}>
                 {" "}
                 What Our <br /> Customers <br /> Are Saying
-              </h2>
+              </h1>
             </div>
           </div>
 

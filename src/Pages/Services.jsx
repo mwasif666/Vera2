@@ -15,31 +15,31 @@ const Services = () => {
       id: 1,
       title: "Thermal Bath",
       description: "Experience relaxation with our thermal bath treatments",
-      icon: "assets/images/icons/sr-7-1.svg",
+      icon: "assets/images/icons/5.png",
     },
     {
       id: 2,
       title: "Waxing",
       description: "Professional waxing services for smooth skin",
-      icon: "assets/images/icons/sr-7-2.svg",
+      icon: "assets/images/icons/9.png",
     },
     {
       id: 3,
       title: "Facials",
       description: "Rejuvenating facial treatments for radiant skin",
-      icon: "assets/images/icons/sr-7-3.svg",
+      icon: "assets/images/icons/3.png",
     },
     {
       id: 4,
       title: "Manicure",
       description: "Beautiful nails with our manicure services",
-      icon: "assets/images/icons/sr-7-4.svg",
+      icon: "assets/images/icons/6.png",
     },
     {
       id: 5,
       title: "Eye & Shadow",
       description: "Experience a metamorphosis from tension to tranquility",
-      icon: "assets/images/icons/sr-7-5.svg",
+      icon: "assets/images/icons/2.png",
     },
   ];
 
@@ -48,31 +48,31 @@ const Services = () => {
       id: 1,
       title: "Sports Massage",
       description: "Recovery and performance enhancement massage",
-      icon: "assets/images/icons/sr-7-1.svg",
+      icon: "assets/images/icons/8.png",
     },
     {
       id: 2,
       title: "Haircut",
       description: "Professional haircuts and styling",
-      icon: "assets/images/icons/sr-7-2.svg",
+      icon: "assets/images/icons/4.png",
     },
     {
       id: 3,
       title: "Shave",
       description: "Traditional wet shave experience",
-      icon: "assets/images/icons/sr-7-3.svg",
+      icon: "assets/images/icons/7.png",
     },
     {
       id: 4,
       title: "Beard Trim",
       description: "Precision beard trimming and shaping",
-      icon: "assets/images/icons/sr-7-4.svg",
+      icon: "assets/images/icons/1.png",
     },
     {
       id: 5,
       title: "Eye & Shadow",
       description: "Experience a metamorphosis from tension to tranquility",
-      icon: "assets/images/icons/sr-7-5.svg",
+      icon: "assets/images/icons/2.png",
     },
   ];
 
