@@ -35,12 +35,12 @@ const HomeVideo = () => {
           <h1 className="sectionTitle">
             Be Bold. <em>Be Subtle</em>. Be You
           </h1>
-          <div className="row book-button">
+          <div className="row d-flex justify-content-center book-button w-100">
             <div className="col-lg-12">
               <button className="ctaButton">Book Appointment</button>
             </div>
             <div className="col-lg-12">
-              <button className="ctaButton">
+              <button className="ctaButton2">
                 Mon - Fri | 10:00 am - 9:00 pm
               </button>
             </div>

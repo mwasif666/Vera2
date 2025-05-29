@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import styles from "./Services.module.css";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState("ladies");
@@ -76,164 +77,261 @@ const Services = () => {
     },
   ];
 
+  // Animation variants
+  const fadeUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.6 },
+    },
+  };
+
+  const slideIn = {
+    hidden: { opacity: 0, x: -20 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.4 },
+    },
+    exit: { opacity: 0, x: 20 },
+  };
+
+  // Viewport configuration for repeat animations
+  const viewportConfig = {
+    once: false, // Animates every time element comes into view
+    amount: 0.2, // Triggers when 20% of element is visible
+    margin: "0px 0px -100px 0px", // Adjusts trigger point
+  };
+
   return (
-    <section className={styles.space}>
+    <motion.section
+      className={styles.space}
+      initial="hidden"
+      whileInView="visible"
+      viewport={viewportConfig}
+      variants={fadeIn}
+    >
       <div className={`${styles.container} container`}>
-        <div className="row justify-content-center text-center">
+        {/* Title Area */}
+        <motion.div
+          className="row justify-content-center text-center"
+          variants={fadeUp}
+          viewport={viewportConfig}
+        >
           <div className="col-md-9 col-lg-7 col-xl-6">
             <div className={styles.titleArea}>
-              <span className={styles.secSubtitle}>Our Services</span>
-              <h1 className={styles.secTitle}>Your Style, Our Expertise</h1>
+              <motion.span
+                className={styles.secSubtitle}
+                variants={fadeUp}
+                viewport={viewportConfig}
+              >
+                Our Services
+              </motion.span>
+              <motion.h1
+                className={styles.secTitle}
+                variants={fadeUp}
+                viewport={viewportConfig}
+              >
+                Your Style, Our Expertise
+              </motion.h1>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Tabs Navigation */}
-        <div className={styles.tabsContainer}>
+        <motion.div
+          className={styles.tabsContainer}
+          variants={fadeUp}
+          viewport={viewportConfig}
+        >
           <div className={styles.tabButtons}>
-            <button
+            <motion.button
               className={`${styles.tabButton} ${
                 activeTab === "ladies" ? styles.activeTab : ""
               }`}
               onClick={() => setActiveTab("ladies")}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              variants={fadeUp}
+              viewport={viewportConfig}
             >
               For Ladies
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               className={`${styles.tabButton} ${
                 activeTab === "gents" ? styles.activeTab : ""
               }`}
               onClick={() => setActiveTab("gents")}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              variants={fadeUp}
+              viewport={viewportConfig}
             >
               For Gents
-            </button>
+            </motion.button>
           </div>
-        </div>
+        </motion.div>
 
         {/* Services Content */}
         <div className={styles.serviceContentWrapper}>
-          {/* Ladies Services */}
-          {activeTab === "ladies" && (
-            <div className={styles.serviceSliderContainer}>
-              <Swiper
-                modules={[Navigation]}
-                spaceBetween={30}
-                slidesPerView={1}
-                navigation={{
-                  prevEl: ".ladies-prev",
-                  nextEl: ".ladies-next",
-                }}
-                breakpoints={{
-                  576: {
-                    slidesPerView: 2,
-                  },
-                  768: {
-                    slidesPerView: 3,
-                  },
-                  992: {
-                    slidesPerView: 4,
-                  },
-                }}
+          <AnimatePresence mode="wait">
+            {/* Ladies Services */}
+            {activeTab === "ladies" && (
+              <motion.div
+                key="ladies"
+                className={styles.serviceSliderContainer}
+                variants={slideIn}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
               >
-                {ladiesServices.map((service) => (
-                  <SwiperSlide key={`ladies-${service.id}`}>
-                    <div className={styles.serviceStyle5}>
-                      <div className={styles.serviceIcon}>
-                        <img src={service.icon} alt={service.title} />
-                      </div>
-                      <div className={styles.serviceContent}>
-                        <h4 className={styles.serviceTitle}>
-                          <a className={styles.textInherit} href="#">
-                            {service.title}
-                          </a>
-                        </h4>
-                        <p className={styles.serviceText}>
-                          {service.description}
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-              <div className={styles.swiperNavigation}>
-                <button className={`${styles.swiperButtonPrev} ladies-prev`}>
-                  <FaArrowLeftLong />
-                </button>
-                <button className={`${styles.swiperButtonNext} ladies-next`}>
-                  <FaLongArrowAltRight />
-                </button>
-              </div>
-            </div>
-          )}
+                <Swiper
+                  modules={[Navigation]}
+                  spaceBetween={30}
+                  slidesPerView={1}
+                  navigation={{
+                    prevEl: ".ladies-prev",
+                    nextEl: ".ladies-next",
+                  }}
+                  breakpoints={{
+                    576: { slidesPerView: 2 },
+                    768: { slidesPerView: 3 },
+                    992: { slidesPerView: 4 },
+                  }}
+                >
+                  {ladiesServices.map((service, index) => (
+                    <SwiperSlide key={`ladies-${service.id}`}>
+                      <motion.div
+                        className={styles.serviceStyle5}
+                        variants={fadeUp}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={viewportConfig}
+                        custom={index}
+                        transition={{ delay: index * 0.1 }}
+                      >
+                        <div className={styles.serviceIcon}>
+                          <img src={service.icon} alt={service.title} />
+                        </div>
+                        <div className={styles.serviceContent}>
+                          <h4 className={styles.serviceTitle}>
+                            <a className={styles.textInherit} href="#">
+                              {service.title}
+                            </a>
+                          </h4>
+                          <p className={styles.serviceText}>
+                            {service.description}
+                          </p>
+                        </div>
+                        <a href="#" className={styles.serviceBtn}>
+                          <i className="far fa-plus"></i>
+                        </a>
+                      </motion.div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+                <div className={styles.swiperNavigation}>
+                  <button className={`${styles.swiperButtonPrev} ladies-prev`}>
+                    <FaArrowLeftLong />
+                  </button>
+                  <button className={`${styles.swiperButtonNext} ladies-next`}>
+                    <FaLongArrowAltRight />
+                  </button>
+                </div>
+              </motion.div>
+            )}
 
-          {/* Gents Services */}
-          {activeTab === "gents" && (
-            <div className={styles.serviceSliderContainer}>
-              <Swiper
-                modules={[Navigation]}
-                spaceBetween={30}
-                slidesPerView={1}
-                navigation={{
-                  prevEl: ".gents-prev",
-                  nextEl: ".gents-next",
-                }}
-                breakpoints={{
-                  576: {
-                    slidesPerView: 2,
-                  },
-                  768: {
-                    slidesPerView: 3,
-                  },
-                  992: {
-                    slidesPerView: 4,
-                  },
-                }}
+            {/* Gents Services */}
+            {activeTab === "gents" && (
+              <motion.div
+                key="gents"
+                className={styles.serviceSliderContainer}
+                variants={slideIn}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
               >
-                {gentsServices.map((service) => (
-                  <SwiperSlide key={`gents-${service.id}`}>
-                    <div className={styles.serviceStyle5}>
-                      <div className={styles.serviceIcon}>
-                        <img src={service.icon} alt={service.title} />
-                      </div>
-                      <div className={styles.serviceContent}>
-                        <h4 className={styles.serviceTitle}>
-                          <a className={styles.textInherit} href="#">
-                            {service.title}
-                          </a>
-                        </h4>
-                        <p className={styles.serviceText}>
-                          {service.description}
-                        </p>
-                      </div>
-                      <a href="#" className={styles.serviceBtn}>
-                        <i className="far fa-plus"></i>
-                      </a>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-              <div className={styles.swiperNavigation}>
-                <button className={`${styles.swiperButtonPrev} gents-prev`}>
-                  <FaArrowLeftLong />
-                </button>
-                <button className={`${styles.swiperButtonNext} gents-next`}>
-                  <FaLongArrowAltRight />
-                </button>
-              </div>
-            </div>
-          )}
+                <Swiper
+                  modules={[Navigation]}
+                  spaceBetween={30}
+                  slidesPerView={1}
+                  navigation={{
+                    prevEl: ".gents-prev",
+                    nextEl: ".gents-next",
+                  }}
+                  breakpoints={{
+                    576: { slidesPerView: 2 },
+                    768: { slidesPerView: 3 },
+                    992: { slidesPerView: 4 },
+                  }}
+                >
+                  {gentsServices.map((service, index) => (
+                    <SwiperSlide key={`gents-${service.id}`}>
+                      <motion.div
+                        className={styles.serviceStyle5}
+                        variants={fadeUp}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={viewportConfig}
+                        custom={index}
+                        transition={{ delay: index * 0.1 }}
+                      >
+                        <div className={styles.serviceIcon}>
+                          <img src={service.icon} alt={service.title} />
+                        </div>
+                        <div className={styles.serviceContent}>
+                          <h4 className={styles.serviceTitle}>
+                            <a className={styles.textInherit} href="#">
+                              {service.title}
+                            </a>
+                          </h4>
+                          <p className={styles.serviceText}>
+                            {service.description}
+                          </p>
+                        </div>
+                        <a href="#" className={styles.serviceBtn}>
+                          <i className="far fa-plus"></i>
+                        </a>
+                      </motion.div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+                <div className={styles.swiperNavigation}>
+                  <button className={`${styles.swiperButtonPrev} gents-prev`}>
+                    <FaArrowLeftLong />
+                  </button>
+                  <button className={`${styles.swiperButtonNext} gents-next`}>
+                    <FaLongArrowAltRight />
+                  </button>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         {/* Price List Button */}
-        <div className="text-center mt-2">
+        <motion.div
+          className="text-center mt-2"
+          variants={fadeUp}
+          viewport={viewportConfig}
+        >
           <button
             className={`btn btn-outline-dark btn-lg ${styles.priceListBtn}`}
           >
             Price List
           </button>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
